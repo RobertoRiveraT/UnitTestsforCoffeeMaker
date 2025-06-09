@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2025-06-07T03:32:12" hostname="LAPTOP-L2S7B0NN" time="0.009">
+<testsuite name="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" tests="39" skipped="0" failures="0" errors="0" timestamp="2025-06-08T07:55:35" hostname="LAPTOP-L2S7B0NN" time="0.025">
   <properties/>
-  <testcase name="testEditRecipeAffectsPricing" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.002"/>
-  <testcase name="testMakeCoffeeReducesInventory" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.003"/>
+  <testcase name="testAddAndDeleteRecipe" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.002"/>
+  <testcase name="testAddInventoryNegativeValue" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.001"/>
+  <testcase name="testEditRecipeAffectsPricing" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testAddBeyondCapacity" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.001"/>
+  <testcase name="testMakeCoffeeReducesInventory" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.007"/>
+  <testcase name="testEditInvalidIndex" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testEqualsDifferentName" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testAddInventoryValidInputs" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testGetRecipesInitialLength" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.001"/>
   <testcase name="testAddRecipeDuplicateName" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
-  <testcase name="testMakeCoffeeNotEnoughMoney" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.001"/>
+  <testcase name="testMakeCoffeeNotEnoughMoney" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testSetAmtCoffeeNonNumeric" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.001"/>
   <testcase name="testAddInventoryNegativeShouldFail" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testSetAmtMilk_ValidInput" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testAddInventoryInvalidNumberFormat" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testMakeCoffeeInvalidRecipeIndex" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.001"/>
   <testcase name="testDeleteRecipe" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testSetAmtChocolate_NegativeInput" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
   <testcase name="testSetNegativePriceShouldThrowException" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testGetAmtCoffee" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
   <testcase name="testAddInventoryNormal" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
-  <testcase name="testEditRecipeSlotContents" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.001"/>
+  <testcase name="testEqualsSameName" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testSetAmtCoffeeNegative" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testSetAmtMilk_NegativeInput" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testInitialInventory" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testSetAmtMilk_NonNumericInput" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.001"/>
+  <testcase name="testSetAmtChocolate_ValidInput" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testEditRecipeSlotContents" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testMakeCoffeeSuccessAndInventoryReduction" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testSetAmtChocolate_NonNumericInput" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
   <testcase name="testDeleteRecipeActuallyRemovesRecipe" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testUseIngredientsFailWhenInsufficient" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
   <testcase name="testMakeCoffeeExactPayment" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testMakeCoffeeNotEnoughMoney2" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testUseIngredientsSuccess" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testDeleteInvalidIndex" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testToStringFormat" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
   <testcase name="testAddRecipeBeyondLimit" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
+  <testcase name="testCheckInventoryDefaultValues" classname="edu.ncsu.csc326.coffeemaker.CoffeeMakerTest" time="0.0"/>
   <system-out><![CDATA[DEBUG INVENTORY:
 Coffee: 12
 Milk: 14

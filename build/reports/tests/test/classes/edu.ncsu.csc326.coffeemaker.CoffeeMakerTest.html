@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">12</div>
+<div class="counter">39</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.007s</div>
+<div class="counter">0.015s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,12 +78,37 @@
 </tr>
 </thead>
 <tr>
+<td class="success">testAddAndDeleteRecipe</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddBeyondCapacity</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddInventoryInvalidNumberFormat</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">testAddInventoryNegativeShouldFail</td>
 <td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">testAddInventoryNegativeValue</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">testAddInventoryNormal</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddInventoryValidInputs</td>
 <td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
@@ -98,6 +123,16 @@
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">testCheckInventoryDefaultValues</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteInvalidIndex</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">testDeleteRecipe</td>
 <td class="success">0s</td>
 <td class="success">passed</td>
@@ -108,13 +143,43 @@
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">testEditInvalidIndex</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">testEditRecipeAffectsPricing</td>
-<td class="success">0.002s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testEditRecipeSlotContents</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEqualsDifferentName</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testEqualsSameName</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetAmtCoffee</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetRecipesInitialLength</td>
 <td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInitialInventory</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -123,17 +188,87 @@
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testMakeCoffeeNotEnoughMoney</td>
+<td class="success">testMakeCoffeeInvalidRecipeIndex</td>
 <td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">testMakeCoffeeNotEnoughMoney</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMakeCoffeeNotEnoughMoney2</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">testMakeCoffeeReducesInventory</td>
-<td class="success">0.003s</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMakeCoffeeSuccessAndInventoryReduction</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSetAmtChocolate_NegativeInput</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSetAmtChocolate_NonNumericInput</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSetAmtChocolate_ValidInput</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSetAmtCoffeeNegative</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSetAmtCoffeeNonNumeric</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSetAmtMilk_NegativeInput</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSetAmtMilk_NonNumericInput</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSetAmtMilk_ValidInput</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testSetNegativePriceShouldThrowException</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testToStringFormat</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUseIngredientsFailWhenInsufficient</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUseIngredientsSuccess</td>
 <td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
@@ -159,7 +294,7 @@ Chocolate: 15
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6.1</a> at 6/06/2025 10:32:12 PM</p>
+<a href="http://www.gradle.org">Gradle 7.6.1</a> at Jun 8, 2025 2:55:36 AM</p>
 </div>
 </div>
 </body>

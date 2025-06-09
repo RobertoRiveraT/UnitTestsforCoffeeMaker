@@ -8,6 +8,7 @@
 
 // Apply the java-library plugin to add support for Java Library
 apply plugin: 'java-library'
+apply plugin: 'jacoco'
 
 
 // Make sure we are using Java 8.
@@ -26,15 +27,48 @@ repositories {
     mavenCentral()
 }
 
-test {
-    testLogging.showStandardStreams = true
-}
-
 dependencies {
+    // This dependency is exported to consumers, that is to say found on their compile classpath.
+    api 'org.apache.commons:commons-math3:3.6.1'
+
+    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
+    implementation 'com.google.guava:guava:21.0'
+
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+
+    // also use Mockito
+    testImplementation "org.mockito:mockito-core:2.12.0"
 
 	// Deprecated.  Use testImplementation
 //    testCompile 'junit:junit:4.11'
 }
 
+test {
+    testLogging.showStandardStreams = true
+}
+
+jacoco {
+    toolVersion = "0.8.8"
+}
+
+jacocoTestReport {
+    dependsOn test // Los tests deben correr antes de generar el reporte
+    reports {
+        xml.required = true
+        html.required = true
+    }
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.90 // 90% de cobertura como pide la tarea
+            }
+        }
+    }
+}
+
+check.dependsOn jacocoTestReport
+check.dependsOn jacocoTestCoverageVerification // <-- opcional
